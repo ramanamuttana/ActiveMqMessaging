@@ -22,7 +22,8 @@ public class Consumer {
         connection.start();
         session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
     }
-    
+
+    // Always close the session , once the we got the data 
     public void close() throws JMSException {
         if (connection != null) {
             connection.close();
