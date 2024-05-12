@@ -3,7 +3,7 @@ package org.demo.Pu;
 import org.fusesource.stomp.jms.*;
 import javax.jms.*;
 
-class Consumer1 {
+public class Consumer1 {
 
     public static void main(String []args) throws JMSException {
 
@@ -54,6 +54,7 @@ class Consumer1 {
     }
 
     private static String env(String key, String defaultValue) {
+        // check if class 
         String rc = System.getenv(key);
         if( rc== null )
             return defaultValue;
