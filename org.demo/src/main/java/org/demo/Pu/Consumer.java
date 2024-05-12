@@ -31,6 +31,7 @@ public class Consumer {
     }    
     
     public static void main(String[] args) throws JMSException {
+	// Connection will be established 
     	Consumer consumer = new Consumer();
     	for (String stock : args) {
     		Destination destination = consumer.getSession().createTopic("STOCKS." + stock);
