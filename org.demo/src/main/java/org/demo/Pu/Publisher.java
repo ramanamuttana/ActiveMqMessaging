@@ -15,6 +15,7 @@ import javax.jms.Session;
 import org.apache.activemq.ActiveMQConnectionFactory;
 import org.apache.activemq.command.ActiveMQMapMessage;
 
+// Send some stock prices being as a producer 
 public class Publisher {
 	
     protected int MAX_DELTA_PERCENT = 1;
