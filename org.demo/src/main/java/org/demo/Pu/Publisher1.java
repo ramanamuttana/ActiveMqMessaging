@@ -6,8 +6,8 @@ import org.fusesource.stomp.jms.*;
 import java.util.Scanner;
 
 import javax.jms.*;
-
-class Publisher1 {
+// Delivery is in NON-PERSISTENT mode 
+public class Publisher1 {
 
 	public static void main(String []args) throws JMSException {
 
